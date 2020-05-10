@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 2500,
+      "categoryId": 1,
+      "description": "Excalibur",
+      "imageUrl": "https://i0.wp.com/pchocasi.com.tr/wp-content/uploads/2016/06/Casper-Excalibur.png"
+    },
+    {
+      "id": 2,
+      "name": "Keyboard",
+      "price": 800,
+      "categoryId": 2,
+      "description": "Razer",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81J9CXxDq4L._AC_SX466_.jpg"
+    },
+    {
+      "imageUrl": "https://www.forsavm.com.tr/UserFiles/Fotograflar/org/2736-huawei-cep-tel-p20-lite-1001800101-huawei-cep-tel-p20-lite.jpg",
+      "name": "Phone",
+      "description": "Huawei P20 Lite",
+      "price": "2000",
+      "categoryId": "2",
+      "id": 3
+    },
+    {
+      "name": "Left 4 Dead 2",
+      "description": "Survival Game",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/91cFzvxFGyS.jpg",
+      "price": "5",
+      "categoryId": "4",
+      "id": 4
+    },
+    {
+      "name": "Overwatch",
+      "description": "Team Game",
+      "imageUrl": "http://www.byturco.com/images/image/0ZD07772978-gr.jpg",
+      "price": "30",
+      "categoryId": "4",
+      "id": 5
+    },
+    {
+      "name": "Doom",
+      "description": "Sci-Fi - Action Game",
+      "imageUrl": "http://www.byturco.com/images/image/1_box.jpg",
+      "price": "7",
+      "categoryId": "4",
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Computer"
+    },
+    {
+      "id": 2,
+      "name": "Electronic"
+    },
+    {
+      "id": 3,
+      "name": "Music"
+    },
+    {
+      "id": 4,
+      "name": "Game"
+    }
+  ]
+}

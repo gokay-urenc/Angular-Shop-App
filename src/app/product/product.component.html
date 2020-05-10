@@ -1,0 +1,26 @@
+<app-category></app-category>
+
+<div class="form-group w-75">
+    <input [(ngModel)] = "filterText" class="form-control" id="productName" placeholder="You can type here what you're looking for." />
+    <small *ngIf="filterText" class="form-text text-muted">You searched for {{ filterText }}</small>
+</div>
+
+<div class="row">
+    <div *ngFor="let product of products | productFilter:filterText" class="productbox">
+        <img [src]="product.imageUrl" class="card-img-top" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title">
+                {{ product.name }} -
+                {{ product.price | currency: "USD":"symbol":"1.2-2" }}
+            </h5>
+            <p class="card-text">{{ product.description }}</p>
+            <a (click) = "addToCard(product)" class="btn btn-primary text-white">Add to Card</a>
+        </div>
+    </div>
+</div>
+
+<!-- Pipes (ng-pipe-...)
+    {{ variable | uppercase }}
+    {{ variable | lowercase }}
+    {{ variable | currency }} or {{ variable | currency:'USD':'symbol':"1.2-2" }} // Defaults
+-->

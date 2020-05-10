@@ -1,0 +1,22 @@
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="form-signin">
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" #userName="ngModel" [(ngModel)]="model.userName" id="userName"
+        name="userName" class="form-control" style="border-radius: 25px" placeholder="User Name" required autofocus>
+        <label for="userName">User Name</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="password" #password="ngModel" [(ngModel)]="model.password" id="password"
+        name="password" class="form-control" style="border-radius: 25px" placeholder="Password" required>
+        <label for="password">Password</label>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" style="border-radius: 25px" type="submit">
+        <i class="fa fa-user"></i> Sign in
+    </button>
+    <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2020</p>
+</form>
